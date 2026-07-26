@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================================
+     IL NOME DELL'APP COMPARE IN PUNTI MARCATI CON IL COMMENTO [NOME].
+     Per rinominare il sito: cerca [NOME] qui e in privacy.html, e sostituisci
+     il file docs/assets/wordmark-teal.png. Dieci minuti in tutto.
+
+     VINCOLO: zero script e zero risorse da server di terzi. Il footer promette
+     «questo sito non usa cookie, non ha script e non carica niente da terzi»:
+     deve restare una frase verificabile. Il telefono qui sotto è disegnato in
+     CSS con dati inventati, perché gli screenshot veri contengono nomi e volti
+     dei membri di viaggi reali.
+     ============================================================================ -->
+
+<title>Amunì — organizza i viaggi con i tuoi amici</title> <!-- [NOME] -->
+<meta name="description" content="App per organizzare viaggi di gruppo: itinerario, alloggi, trasporti, spese divise in più valute, checklist e decisioni prese insieme.">
+<link rel="icon" href="assets/amuni-icon.png">
+<link rel="stylesheet" href="style.css?v=5">
+<meta property="og:title" content="Amunì — organizza i viaggi con i tuoi amici"> <!-- [NOME] -->
+<meta property="og:description" content="Tutto il viaggio di gruppo in un posto solo: itinerario, spese, alloggi, decisioni.">
+<meta property="og:type" content="website">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="site">
+    <img src="assets/wordmark-teal.png" alt="Amunì"> <!-- [NOME] -->
+    <nav>
+      <a href="#funzioni">Cosa fa</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="badge"><span class="dot"></span>In sviluppo · presto su Android</span>
+
+        <h1>Organizza i viaggi con i tuoi amici, in&nbsp;un posto solo.</h1>
+
+        <p class="lead">
+          Itinerario, alloggi, trasporti, spese divise, checklist, decisioni prese insieme.
+          Tutto quello che di solito finisce sparso fra chat, screenshot e fogli di calcolo.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="mailto:andreasarzana.lav@gmail.com">Avvisami quando esce</a>
+          <a class="btn ghost" href="#funzioni">Guarda cosa fa</a>
+        </div>
+
+        <!-- La voce di dizionario è la stessa che si vede aprendo l'app: il nome è
+             strano fuori dalla Sicilia, quindi si spiega invece di nasconderlo. -->
+        <div class="dict">
+          <span class="lemma">a·mu·nì</span><span class="gram">interiez.</span> <!-- [NOME] -->
+          <span class="tag">SICILIANO</span>
+          <p class="def">«Andiamo!» — l’invito a muoversi, detto a chi vuoi con te.</p>
+        </div>
+      </div>
+
+      <!-- Mockup disegnato in CSS: nessuno screenshot reale, dati inventati -->
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="route" viewBox="0 0 420 420" fill="none">
+          <path d="M30 330 C 120 240, 90 140, 210 120 S 380 90, 395 30"
+                stroke="currentColor" stroke-width="2.5" stroke-dasharray="2 10"
+                stroke-linecap="round"/>
+          <circle cx="30" cy="330" r="5" fill="currentColor"/>
+          <path d="M395 30 l-14 4 6 6 -4 8 14 -6 z" fill="currentColor" transform="rotate(12 395 30)"/>
+        </svg>
+
+        <div class="phone">
+          <div class="screen">
+            <div class="p-status"><span>9:41</span><span class="p-sig"><i></i><i></i><i></i></span></div>
+
+            <div class="p-head">
+              <div>
+                <div class="p-trip">Lisbona</div>
+                <div class="p-sub">Giorno 3 di 5 · 4 amici</div>
+              </div>
+              <div class="p-wx">24° sereno</div>
+            </div>
+
+            <div class="p-card p-next">
+              <div class="p-label">Prossimo impegno</div>
+              <div class="p-row"><span class="p-time">15:30</span> Tram 28 verso Alfama</div>
+              <div class="p-meta">fra 40 minuti · Praça Martim Moniz</div>
+            </div>
+
+            <div class="p-card">
+              <div class="p-label">Ultima spesa</div>
+              <div class="p-row2"><span>Cena al Bairro Alto</span><b>74,00&nbsp;€</b></div>
+              <div class="p-meta">divisa in 4 · cambio congelato</div>
+            </div>
+
+            <div class="p-card">
+              <div class="p-label">Sondaggio · domani</div>
+              <div class="p-q">Sintra o Cascais?</div>
+              <div class="p-opt"><i style="width:72%"></i><span>Sintra · 3</span></div>
+              <div class="p-opt"><i style="width:28%"></i><span>Cascais · 1</span></div>
+            </div>
+
+            <div class="p-tabbar"><span class="on"></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+
+        <div class="stamp">non è<br>uno screenshot,<br>è disegnato ✏️</div>
+      </div>
+    </section>
+
+    <!-- ============================== SOLDI ============================== -->
+    <section class="money">
+      <div class="money-copy">
+        <div class="stat">
+          <span class="stat-n">82%</span>
+          <span class="stat-l">preferisce rimetterci di tasca propria piuttosto che chiedere i soldi agli amici</span>
+        </div>
+        <h2>Nessuno deve chiedere i soldi indietro</h2>
+        <p>
+          È la parte peggiore di ogni viaggio di gruppo: qualcuno anticipa, e poi non se la
+          sente di rincorrere gli amici per farsi rimborsare. Così ci rimette e sta zitto.
+        </p>
+        <p>
+          Qui i promemoria li manda l’app, da sola, uguali per tutti e in privato.
+          Chi ha anticipato non deve chiedere niente a nessuno.
+        </p>
+        <p class="src">Indagine Harris Poll per CIT Bank (2026).</p>
+      </div>
+
+      <!-- Notifica finta: è l'app che parla, non l'amico creditore -->
+      <div class="notif-stack" aria-hidden="true">
+        <div class="notif">
+          <div class="notif-head">
+            <img src="assets/amuni-icon.png" alt=""> <span>Amunì · adesso</span> <!-- [NOME] -->
+          </div>
+          <div class="notif-title">Promemoria del viaggio</div>
+          <div class="notif-body">La tua parte per «Cena al Bairro Alto» è 18,50 €. Con calma — questo messaggio lo ricevono tutti, nessuno te lo sta chiedendo di persona.</div>
+        </div>
+        <div class="notif shadow-1"></div>
+        <div class="notif shadow-2"></div>
+      </div>
+    </section>
+
+    <!-- ============================== FUNZIONI ============================== -->
+    <h2 id="funzioni">Cosa ci trovi dentro</h2>
+
+    <div class="grid">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg></div>
+        <h3>Itinerario</h3>
+        <p>Giorno per giorno, con meteo e orari. Si apre già sulla giornata di oggi.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18h18M6 10V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3"/></svg></div>
+        <h3>Alloggi e trasporti</h3>
+        <p>Incolli il link di una prenotazione e la scheda si compila da sola, foto compresa.</p>
+      </div>
+      <div class="card hi">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="12" r="6"/><path d="M15 6.3a6 6 0 1 1 0 11.4M7.5 12H11M9 10v4"/></svg></div>
+        <h3>Spese in più valute</h3>
+        <p>Il cambio viene congelato su ogni spesa, e i conti tornano al centesimo.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 6h2l1.5 2L10 5M4 13h2l1.5 2L10 12M4 19h2"/><path d="M13 6h7M13 13h7M13 19h7"/></svg></div>
+        <h3>Checklist</h3>
+        <p>Chi porta cosa, diviso per sezioni, con le voci suggerite in base al paese.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-8"/></svg></div>
+        <h3>Decisioni insieme</h3>
+        <p>Sondaggi per scegliere hotel, ristoranti e attività senza trecento messaggi.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg></div>
+        <h3>Oggi</h3>
+        <p>In viaggio serve solo sapere cosa succede adesso: prossimo impegno e meteo.</p>
+      </div>
+    </div>
+
+    <!-- ============================== COME FUNZIONA ============================== -->
+    <h2>Come funziona</h2>
+
+    <ol class="steps">
+      <li>
+        <span class="n">1</span>
+        <h3>Crea il viaggio</h3>
+        <p>Destinazione e date. Gli amici entrano con un link, senza configurare niente.</p>
+      </li>
+      <li>
+        <span class="n">2</span>
+        <h3>Riempitelo insieme</h3>
+        <p>Prenotazioni incollate da un link, spese al volo, sondaggi per decidere.</p>
+      </li>
+      <li>
+        <span class="n">3</span>
+        <h3>Amunì</h3> <!-- [NOME] -->
+        <p>In viaggio la schermata Oggi vi dice cosa succede adesso. Al resto pensa l’app.</p>
+      </li>
+    </ol>
+
+    <!-- ============================== STATO ============================== -->
+    <section class="status">
+      <h2>A che punto siamo</h2>
+      <p>
+        L’app è in sviluppo attivo e viene provata su viaggi veri. La prima versione
+        pubblica arriverà su Android; iOS più avanti.
+      </p>
+      <p>
+        Se vuoi essere avvisato quando esce, o hai un’idea da propormi,
+        <a href="mailto:andreasarzana.lav@gmail.com">scrivimi</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site">
+    <p>
+      Amunì — <a href="mailto:andreasarzana.lav@gmail.com">andreasarzana.lav@gmail.com</a> · <!-- [NOME] -->
+      <a href="privacy.html">Informativa sulla privacy</a>
+    </p>
+    <p>Questo sito non usa cookie, non ha script e non carica niente da server di terzi.</p>
+  </footer>
+
+</div>
+</body>
+</html>
