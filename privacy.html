@@ -13,12 +13,20 @@
      nessuna libreria di analytics o tracciamento è presente nel progetto.
 
      Il nome dell'app è marcato con [NOME], come in index.html.
+
+     ⚠️ Dal 2026-08-01 esiste in TRE lingue: privacy.html (fa fede), privacy.en.html,
+     privacy.es.html. Ogni modifica va riportata in TUTTE E TRE nello stesso giro —
+     una policy che dice cose diverse in lingue diverse è peggio di una sola in
+     italiano — e la data va aggiornata in cima a ciascuna.
      ============================================================================ -->
 
 <title>Informativa sulla privacy — Amunì</title> <!-- [NOME] -->
 <meta name="robots" content="index,follow">
 <link rel="icon" href="assets/amuni-icon.png">
 <link rel="stylesheet" href="style.css?v=5">
+<link rel="alternate" hreflang="it" href="privacy.html">
+<link rel="alternate" hreflang="en" href="privacy.en.html">
+<link rel="alternate" hreflang="es" href="privacy.es.html">
 </head>
 <body>
 
@@ -30,7 +38,7 @@
   </header>
 
   <h1>Informativa sulla privacy</h1>
-  <p class="updated">Ultimo aggiornamento: 27 luglio 2026</p>
+  <p class="updated">Ultimo aggiornamento: 1 agosto 2026 · Italiano · <a href="privacy.en.html">English</a> · <a href="privacy.es.html">Español</a></p>
 
   <div class="abstract">
     <h2>In due righe</h2>
@@ -92,6 +100,26 @@
       <td>Per avvisarti quando succede qualcosa nel viaggio. Puoi disattivare le notifiche
         dalle impostazioni dell’app o del telefono.</td>
     </tr>
+    <tr>
+      <td><strong>Documenti che carichi tu</strong> (immagini o PDF: passaporto, carta
+        d’identità, assicurazione, biglietti, voucher…)</td>
+      <td>
+        Per averli con te durante il viaggio. Sono <strong>facoltativi</strong>: l’app
+        funziona senza. Li carichi solo tu e restano <strong>privati per impostazione
+        predefinita</strong>: sono conservati in un archivio non pubblico e nessun altro può
+        aprirli, nemmeno chi ha creato il viaggio. Un documento del viaggio diventa visibile
+        agli altri membri <strong>solo se sei tu ad attivare la condivisione</strong>, e puoi
+        disattivarla quando vuoi. I documenti che carichi nella tua sezione personale
+        (passaporto e simili) <strong>non sono mai condivisibili</strong>.
+        Una <strong>copia resta sul tuo telefono</strong>, così puoi aprirli anche senza
+        connessione; si cancella quando elimini il documento o l’app.
+        Se indichi una data di scadenza, la usiamo solo per avvisarti per tempo.
+        <br><br>
+        ⚠️ Non leggiamo il contenuto dei documenti e non ne estraiamo automaticamente i dati.
+        Un documento d’identità è un dato particolarmente delicato: caricalo solo se ti
+        serve davvero, e condividilo solo con chi deve vederlo.
+      </td>
+    </tr>
   </table>
 
   <h3>Cosa NON raccogliamo</h3>
@@ -119,7 +147,7 @@
   </p>
   <table>
     <tr><th>Fornitore</th><th>A cosa serve</th></tr>
-    <tr><td>Supabase</td><td>Banca dati, autenticazione e archivio delle foto</td></tr>
+    <tr><td>Supabase</td><td>Banca dati, autenticazione e archivio delle foto e dei documenti</td></tr>
     <tr><td>Google</td><td>Accesso con Google e recapito delle notifiche push (Firebase)</td></tr>
     <tr><td>Expo</td><td>Servizio di invio delle notifiche push</td></tr>
     <tr><td>Mapbox e Photon (komoot)</td><td>Ricerca dei luoghi che digiti; ricevono il testo cercato</td></tr>
@@ -138,6 +166,9 @@
     <li><strong>Foto della bacheca:</strong> vengono cancellate automaticamente tre giorni
       dopo la fine del viaggio. Nei viaggi senza una data di fine vale un limite massimo di
       50 foto.</li>
+    <li><strong>Documenti:</strong> restano finché sei tu a eliminarli, o finché elimini
+      l’account. Non hanno scadenza automatica: servono proprio quando ti servono, e
+      cancellarli a sorpresa sarebbe peggio che tenerli.</li>
     <li><strong>Tutto il resto:</strong> finché esiste il tuo account. Quando lo elimini, i
       tuoi dati vengono cancellati.</li>
   </ul>
